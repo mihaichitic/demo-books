@@ -9,6 +9,8 @@ module.exports = app => {
 
   router.get("/available", books.findAllAvailable);
 
+  router.get("/available2", books.findAllAvailable);
+
   router.get("/:id", books.findOne);
 
   router.put("/:id", books.update);
